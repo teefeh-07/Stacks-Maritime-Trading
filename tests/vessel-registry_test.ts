@@ -4,3 +4,4 @@ Clarinet.test({
   name: "Can register a new vessel",
   async fn(chain: Chain, accounts: Map<string, Account>) {
     const deployer = accounts.get("deployer")!;
+    let block = chain.mineBlock([
