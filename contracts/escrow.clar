@@ -25,3 +25,4 @@
   (let ((escrow (unwrap! (get-escrow escrow-id) ERR-ESCROW-NOT-FOUND)))
     (asserts! (is-eq tx-sender (get buyer escrow)) ERR-NOT-AUTHORIZED)
     (asserts! (not (get released escrow)) ERR-ALREADY-RELEASED)
+    (try! (as-contract (stx-transfer? (get amount escrow) tx-sender (get seller escrow))))
