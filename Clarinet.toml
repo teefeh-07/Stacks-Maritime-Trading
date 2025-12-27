@@ -18,3 +18,8 @@ callee_filter = false
 [networks.devnet]
 epoch = "3.3"
 clarity_version = 4
+
+[contracts.escrow]
+path = "contracts/escrow.clar"
+clarity_version = 4
+epoch = "3.3"
