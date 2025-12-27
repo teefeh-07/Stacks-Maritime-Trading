@@ -22,3 +22,4 @@
 )
 
 (define-public (release-escrow (escrow-id uint))
+  (let ((escrow (unwrap! (get-escrow escrow-id) ERR-ESCROW-NOT-FOUND)))
