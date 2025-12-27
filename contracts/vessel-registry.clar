@@ -15,3 +15,5 @@
 
 ;; Getters
 (define-read-only (get-vessel (vessel-id uint))
+  (map-get? vessels { vessel-id: vessel-id })
+)
