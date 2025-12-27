@@ -9,3 +9,4 @@
 (define-public (register-vessel (vessel-id uint) (name (string-ascii 64)) (capacity uint))
   (begin
     (asserts! (is-none (map-get? vessels { vessel-id: vessel-id })) ERR-VESSEL-ALREADY-EXISTS)
+    (ok (map-set vessels { vessel-id: vessel-id } { owner: tx-sender, name: name, capacity: capacity, status: "active" }))
