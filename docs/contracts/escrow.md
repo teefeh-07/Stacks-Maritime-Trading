@@ -6,3 +6,6 @@ Manages secure payment escrow for cargo deliveries.
 
 ### create-escrow
 Creates a new escrow holding STX until delivery confirmation.
+
+### release-escrow
+Releases funds to seller upon buyer confirmation.
