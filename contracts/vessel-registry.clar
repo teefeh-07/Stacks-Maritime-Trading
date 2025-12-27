@@ -12,3 +12,5 @@
     (ok (map-set vessels { vessel-id: vessel-id } { owner: tx-sender, name: name, capacity: capacity, status: "active" }))
   )
 )
+
+;; Getters
