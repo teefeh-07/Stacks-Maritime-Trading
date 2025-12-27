@@ -10,3 +10,4 @@
 
 (define-public (create-escrow (seller principal) (amount uint))
   (let ((escrow-id (+ (var-get escrow-counter) u1)))
+    (try! (stx-transfer? amount tx-sender (as-contract tx-sender)))
