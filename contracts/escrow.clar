@@ -6,3 +6,4 @@
 (define-constant ERR-NOT-AUTHORIZED (err u100))
 
 (define-map escrows { escrow-id: uint } { buyer: principal, seller: principal, amount: uint, released: bool })
+(define-data-var escrow-counter uint u0)
