@@ -7,3 +7,4 @@
 (define-public (add-review (user principal) (score uint))
   (begin
     (asserts! (<= score u5) ERR-INVALID-SCORE)
+    (let ((current (default-to { score: u0, reviews: u0 } (map-get? reputation { user: user }))))
