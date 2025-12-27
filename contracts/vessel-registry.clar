@@ -21,3 +21,6 @@
 (define-public (update-vessel-status (vessel-id uint) (new-status (string-ascii 20)))
   (let ((vessel (unwrap! (map-get? vessels { vessel-id: vessel-id }) ERR-VESSEL-NOT-FOUND)))
     (asserts! (is-eq tx-sender (get owner vessel)) ERR-NOT-AUTHORIZED)
+    (ok (map-set vessels { vessel-id: vessel-id } (merge vessel { status: new-status })))
+  )
+)
