@@ -23,3 +23,8 @@ clarity_version = 4
 path = "contracts/escrow.clar"
 clarity_version = 4
 epoch = "3.3"
+
+[contracts.reputation]
+path = "contracts/reputation.clar"
+clarity_version = 4
+epoch = "3.3"
