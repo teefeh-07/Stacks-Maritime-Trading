@@ -2,3 +2,4 @@
 ;; Tracks reliability scores for vessels and traders.
 
 (define-constant ERR-INVALID-SCORE (err u400))
+(define-map reputation { user: principal } { score: uint, reviews: uint })
