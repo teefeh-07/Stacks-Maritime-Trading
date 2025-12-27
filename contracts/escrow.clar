@@ -12,3 +12,4 @@
   (let ((escrow-id (+ (var-get escrow-counter) u1)))
     (try! (stx-transfer? amount tx-sender (as-contract tx-sender)))
     (map-set escrows { escrow-id: escrow-id } { buyer: tx-sender, seller: seller, amount: amount, released: false })
+    (var-set escrow-counter escrow-id)
