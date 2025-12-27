@@ -14,3 +14,5 @@
 )
 
 (define-read-only (get-reputation (user principal))
+  (map-get? reputation { user: user })
+)
