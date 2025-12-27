@@ -25,3 +25,5 @@
 )
 
 (define-read-only (get-cargo (cargo-id uint))
+  (map-get? cargo { cargo-id: cargo-id })
+)
