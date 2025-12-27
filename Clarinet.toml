@@ -4,3 +4,6 @@ authors = []
 description = ""
 telemetry_copy_on_to_cpu = false
 boot_contracts = ["costs-v2", "pox-4", "lockup"]
+[repl]
+costs_version = 2
+parser_version = 2
