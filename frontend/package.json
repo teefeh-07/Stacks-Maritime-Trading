@@ -8,3 +8,5 @@
     "preview": "vite preview"
   },
   "dependencies": {},
+  "devDependencies": {}
+}
