@@ -3,3 +3,4 @@ export function Header({ connected, onConnect }) {
     <h1>⚓ Maritime Trading</h1>
     <button onclick="${onConnect}">${connected ? "Connected" : "Connect Wallet"}</button>
   </header>`;
+}
