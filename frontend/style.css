@@ -24,3 +24,5 @@ button:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0, 102, 
 .vessel-card h3 { color: var(--secondary); margin-bottom: 0.5rem; }
 
 .status { padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.875rem; font-weight: 600; }
+
+.status.active { background: #00ff88; color: #0a0e27; }
