@@ -12,3 +12,5 @@
     )
   )
 )
+
+(define-read-only (get-reputation (user principal))
