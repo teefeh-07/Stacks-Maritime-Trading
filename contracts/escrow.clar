@@ -18,3 +18,5 @@
 )
 
 (define-read-only (get-escrow (escrow-id uint))
+  (map-get? escrows { escrow-id: escrow-id })
+)
