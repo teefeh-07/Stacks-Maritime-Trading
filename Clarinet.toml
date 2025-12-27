@@ -19,6 +19,16 @@ callee_filter = false
 epoch = "3.3"
 clarity_version = 4
 
+[contracts.vessel-registry]
+path = "contracts/vessel-registry.clar"
+clarity_version = 4
+epoch = "3.3"
+
+[contracts.trade-manager]
+path = "contracts/trade-manager.clar"
+clarity_version = 4
+epoch = "3.3"
+
 [contracts.escrow]
 path = "contracts/escrow.clar"
 clarity_version = 4
