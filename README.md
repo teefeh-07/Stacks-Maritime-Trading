@@ -9,3 +9,6 @@ A decentralized platform for maritime logistics and trade automation.
 - @stacks/transactions for on-chain logic
 - WalletConnect for multi-wallet support
 - Hiro Chainhooks for real-time indexing
+
+## Features
+- Vessel registration and tracking
