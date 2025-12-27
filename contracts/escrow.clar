@@ -9,3 +9,4 @@
 (define-data-var escrow-counter uint u0)
 
 (define-public (create-escrow (seller principal) (amount uint))
+  (let ((escrow-id (+ (var-get escrow-counter) u1)))
