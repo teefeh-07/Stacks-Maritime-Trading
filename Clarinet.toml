@@ -14,3 +14,7 @@ strict = false
 trusted_sender = false
 trusted_caller = false
 callee_filter = false
+
+[networks.devnet]
+epoch = "3.3"
+clarity_version = 4
