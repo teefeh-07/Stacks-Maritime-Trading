@@ -14,3 +14,4 @@
 )
 
 ;; Getters
+(define-read-only (get-vessel (vessel-id uint))
