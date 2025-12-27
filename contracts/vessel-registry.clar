@@ -19,3 +19,4 @@
 )
 
 (define-public (update-vessel-status (vessel-id uint) (new-status (string-ascii 20)))
+  (let ((vessel (unwrap! (map-get? vessels { vessel-id: vessel-id }) ERR-VESSEL-NOT-FOUND)))
