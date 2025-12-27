@@ -14,3 +14,4 @@ A decentralized platform for maritime logistics and trade automation.
 - Vessel registration and tracking
 - Cargo booking and management
 - Secure escrow payments
+- Reputation system for trust
