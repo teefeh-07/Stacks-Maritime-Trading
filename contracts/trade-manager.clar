@@ -15,3 +15,5 @@
     status: (string-ascii 20)
   }
 )
+
+(define-public (book-cargo (vessel-id uint) (description (string-ascii 100)))
