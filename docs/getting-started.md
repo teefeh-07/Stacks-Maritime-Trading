@@ -9,3 +9,8 @@
 git clone https://github.com/teefeh-07/Stacks-Maritime-Trading.git
 cd Stacks-Maritime-Trading
 ```
+
+## Running Tests
+```bash
+clarinet test
+```
