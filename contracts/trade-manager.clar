@@ -20,3 +20,6 @@
   (let ((cargo-id (+ (var-get cargo-id-counter) u1)))
     (map-set cargo { cargo-id: cargo-id } { sender: tx-sender, vessel-id: vessel-id, description: description, status: "pending" })
     (var-set cargo-id-counter cargo-id)
+    (ok cargo-id)
+  )
+)
