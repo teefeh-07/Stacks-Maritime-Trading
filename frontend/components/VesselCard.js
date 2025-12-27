@@ -4,3 +4,4 @@ export function VesselCard({ vessel }) {
     <p>Capacity: ${vessel.capacity} tons</p>
     <span class="status ${vessel.status}">${vessel.status}</span>
   </div>`;
+}
