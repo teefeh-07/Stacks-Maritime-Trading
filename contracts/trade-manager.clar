@@ -23,3 +23,5 @@
     (ok cargo-id)
   )
 )
+
+(define-read-only (get-cargo (cargo-id uint))
