@@ -16,3 +16,5 @@
     (ok escrow-id)
   )
 )
+
+(define-read-only (get-escrow (escrow-id uint))
