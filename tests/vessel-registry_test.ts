@@ -8,3 +8,5 @@ Clarinet.test({
       Tx.contractCall("vessel-registry", "register-vessel", [types.uint(1), types.ascii("Ship-A"), types.uint(1000)], deployer.address)
     ]);
     block.receipts[0].result.expectOk();
+  }
+});
