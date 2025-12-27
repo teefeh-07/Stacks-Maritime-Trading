@@ -3,3 +3,4 @@
 
 (define-constant ERR-CARGO-NOT-FOUND (err u200))
 (define-constant ERR-INSUFFICIENT-FUNDS (err u201))
+(define-constant ERR-NOT-AUTHORIZED (err u100))
