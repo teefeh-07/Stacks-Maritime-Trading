@@ -1,2 +1,6 @@
 [project]
 name = "Stacks-Maritime-Trading"
+authors = []
+description = ""
+telemetry_copy_on_to_cpu = false
+boot_contracts = ["costs-v2", "pox-4", "lockup"]
