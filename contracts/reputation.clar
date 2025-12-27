@@ -6,3 +6,4 @@
 
 (define-public (add-review (user principal) (score uint))
   (begin
+    (asserts! (<= score u5) ERR-INVALID-SCORE)
