@@ -17,3 +17,4 @@
 )
 
 (define-public (book-cargo (vessel-id uint) (description (string-ascii 100)))
+  (let ((cargo-id (+ (var-get cargo-id-counter) u1)))
