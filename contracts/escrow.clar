@@ -24,3 +24,4 @@
 (define-public (release-escrow (escrow-id uint))
   (let ((escrow (unwrap! (get-escrow escrow-id) ERR-ESCROW-NOT-FOUND)))
     (asserts! (is-eq tx-sender (get buyer escrow)) ERR-NOT-AUTHORIZED)
+    (asserts! (not (get released escrow)) ERR-ALREADY-RELEASED)
