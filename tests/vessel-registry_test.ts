@@ -5,3 +5,4 @@ Clarinet.test({
   async fn(chain: Chain, accounts: Map<string, Account>) {
     const deployer = accounts.get("deployer")!;
     let block = chain.mineBlock([
+      Tx.contractCall("vessel-registry", "register-vessel", [types.uint(1), types.ascii("Ship-A"), types.uint(1000)], deployer.address)
