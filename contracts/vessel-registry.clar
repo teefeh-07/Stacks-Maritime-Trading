@@ -17,3 +17,5 @@
 (define-read-only (get-vessel (vessel-id uint))
   (map-get? vessels { vessel-id: vessel-id })
 )
+
+(define-public (update-vessel-status (vessel-id uint) (new-status (string-ascii 20)))
