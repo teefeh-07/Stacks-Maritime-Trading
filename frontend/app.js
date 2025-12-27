@@ -5,3 +5,4 @@ const userSession = new UserSession({ appConfig });
 
 function connectWallet() {
   showConnect({ appDetails: { name: "Maritime Trading", icon: window.location.origin + "/icon.png" }, onFinish: () => window.location.reload(), userSession });
+}
