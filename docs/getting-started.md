@@ -14,3 +14,10 @@ cd Stacks-Maritime-Trading
 ```bash
 clarinet test
 ```
+
+## Frontend Setup
+```bash
+cd frontend
+npm install
+npm run dev
+```
