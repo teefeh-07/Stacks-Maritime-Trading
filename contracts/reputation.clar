@@ -8,3 +8,7 @@
   (begin
     (asserts! (<= score u5) ERR-INVALID-SCORE)
     (let ((current (default-to { score: u0, reviews: u0 } (map-get? reputation { user: user }))))
+      (ok (map-set reputation { user: user } { score: (+ (get score current) score), reviews: (+ (get reviews current) u1) }))
+    )
+  )
+)
